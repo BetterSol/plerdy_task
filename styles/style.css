@@ -1,0 +1,429 @@
+@import "../fonts/SourceSansPro-Regular.otf";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #001E41;
+}
+
+.header_wrapper {
+    width: 100%;
+    height: 77px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.header_block {
+    max-width: 1440px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 92px;
+
+}
+.header_icon {
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.navigation_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 275px;
+}
+.navigation_block {
+    display: flex;
+    gap: 30px;
+}
+.navigation_link {
+    text-decoration: none;
+}
+.navigation_link:hover {
+    color: #5D78FF;
+}
+
+.navigation_name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19.8px;
+    color:#7D7D7D;
+    text-decoration: none;
+}
+
+.contact_block {
+    display: flex;
+    gap: 40px;
+}
+
+/* buttons */
+.button_signIn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #5D78FF; 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button_blue {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px;
+    padding: 6px 24px;
+    color: #FFFFFF;
+    background-color: #5D78FF; 
+    border-radius: 6px;
+    border: none;
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+/* main */
+
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* hero section */
+
+.hero_wrapper {
+    position: relative;
+    max-width: 1256px;
+    display: flex;
+    margin: 40px 92px 100px;
+    background-color: #E2F2FF;
+    border-radius: 10px;
+}
+
+.hero_block {
+    min-width: 320px;
+    max-width: 665px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 51px;
+}
+
+.hero_title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.hero_intro {
+    margin-top: 81px;
+    margin-bottom: 59px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.hero_text {
+    float: left;
+}
+.hero_body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #001E41;
+}
+
+.hero_additional {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #909090;
+}
+
+.clients_list {
+    margin-bottom: 20px;
+    display: flex;
+    align-items:center;
+    gap: 24px;
+} 
+
+.clients_intro {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+.client {
+    height: fit-content;
+}
+
+/* hero illustration */
+.image_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.image_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_illustration {
+    position: relative;
+    height: 442px;
+    width: 370px;
+    background-image: url("../images/linkedin-sales-solutions-wS73LE0GnKs-unsplash\ 1.png");
+    background-repeat: no-repeat;
+}   
+.illustration_bg_image {
+    padding-top: 31px;
+}
+.illustration_chart_combined {
+    position: absolute;
+    top: -41px;
+    left: -65px;
+}
+
+.illustration_chart_green {
+    position: absolute;
+    top: 200px;
+    left: -109px;
+}
+
+.illustration_chart_blue {
+    position: absolute;
+    top: 49px;
+    left: 235px;
+}
+
+
+/* section */
+.section_title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #909090;
+    margin-bottom: 40px;
+    margin-left: 92px;
+}
+
+/* slider section */
+.slider_block {
+    display: flex;
+    gap: 17px;
+    overflow: hidden;
+}
+.slider_card_wrapper {
+    position:relative;
+    height: 332px;
+    min-width: 262px;
+    padding: 20px;
+    background-color: #F8F8FA;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.reason_intro {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 20px;
+}
+.reason_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.reason_number_bg {
+    position: absolute;
+    right: -110px;
+    bottom: -110px;
+    height: 219px;
+    width: 219px;
+    border-radius: 50%;
+    background-color:#E3EEFF;
+}
+
+.reason_number_wrapper {
+    position: absolute;
+    height: 91px;
+    width: 92px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 0;
+    right: 0;
+}
+.reason_number {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+/* footer section */
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.footer_motivation{
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 440px;
+}
+
+/* pop-up window */
+.pop_up_wrapper {
+    display: flex;
+    
+}
+
+@media (max-width: 1350px) {
+    .body_wrapper {
+        margin: 0 10px;
+    }
+
+    .header_wrapper {
+        height: 50px;
+    }
+
+    .header_block {
+        padding: 14px 10px;
+    }
+
+    .navigation_wrapper {
+        display: none;
+    }
+
+    .header_icon, .plerdy_logo {
+        height: 21px;
+    }
+
+    .hero_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: max-content;
+        min-width: 320px;
+        margin: 10px 10px 40px 10px;
+        padding: 20px 10px;
+    }
+
+    .hero_block{
+       margin: 0 auto; 
+       text-align: center;
+    }
+
+    .hero_intro {
+        margin: 0 0 20px 0;
+        text-align: left;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero_title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .hero_text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero_body, .hero_additional {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .button_blue {
+        font-size: 14px;
+    }
+
+    .clients_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .client_sotserve {
+        height: 17px;
+    }
+    .client_subaru {
+        height: 15px;
+    }
+    .client_anex_tour {
+        height: 14px;
+    }
+    .client_prom {
+        height: 18px;
+    }
+    .client_ukrposhta {
+        height: 24px;
+    }
+
+    .hero_illustration {
+        width: 229px;
+        height: 273px;
+        background-size: contain;
+    }
+
+    .illustration_chart_combined {
+        height: 118px;
+        top: -20px;
+        left: -35px;
+    }
+
+    .illustration_chart_green {
+        width: 152px;
+        top: 170px;
+        left: -57px
+    }
+
+    .illustration_chart_blue {
+        width: 121px;
+        top: 38px;
+        left: 140px;
+    }
+    
+    .section_title {
+        margin: 0 10px 15px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .slider_block {
+        margin-left: 10px;
+    }
+    .slider_card_wrapper {
+        min-width: 300px;
+    }
+    .reason_title {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    
+    .footer_wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+        gap: 10px;
+    }
+
+    .footer_motivation {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+    }
+}
