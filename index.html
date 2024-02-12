@@ -7,10 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <link 
-        rel="stylesheet" 
-        type="text/css" 
-        href="slick-1.8.1/slick/slick.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Plerdy</title>
 </head>
 <body>
@@ -30,21 +31,24 @@
                             Pricing
                         </h5>
                     </a>
-                    <a class="navigation_link" href="#">
+                    <a class="navigation_link" href="plug.html">
                         <h5 class="navigation_name">
                             Use Cases
                         </h5>
                     </a>
-                    <a class="navigation_link" href="#">
+                    <a class="navigation_link" href="plug.html">
                         <h5 class="navigation_name">
                             Book a Demo
                         </h5>
                     </a>
                 </nav>
                 <div class="contact_block">
-                    <button class="button_signIn">Sign In</button>
-                    <button class="button_blue">Contact sales</button>
+                    <button class="button button_signIn">Sign In</button>
+                    <button class="button button_blue">Contact sales</button>
                 </div>
+            </div>
+            <div class="menu">
+                <img src="./icons/menu.svg" alt="menu icon">
             </div>
         </div>
     </header>
@@ -58,7 +62,7 @@
                             <p class="hero_body">Usability auditing with the Plerdy tool is a comprehensive expert assessment of your website based on a profound study of user behavior registered on it. Plerdy will provide you with crucial data based on which you will be able to run an efficient usability audit of your website, identify and fix SEO issues, and subsequently lead it to higher positions in search.</p>
                             <p class="hero_additional">Thus, you'll compile a list of flaws in your website interface, navigation, and conversion path that can eventually affect its micro and macro conversion rates.</p>
                         </div>
-                        <button class="button_blue">Run the Plerdy tool</button>
+                        <button class="button button_blue">Run the Plerdy tool</button>
                     </div>
     
                     <p class="clients_intro">Trusted by some of the world's largest enterprises</p>
@@ -91,106 +95,159 @@
                 </div>
                 </div>
             </div>
-            <!-- <div class="pop_up_wrapper">
+            <div class="pop-up_wrapper">
                 <div class="popup_image">
                     <img src="./images/pexels-pixabay-264985 1.png" alt="webinar advertising">
                 </div>
                 <div class="popup_form">
+                    <button type="reset" class="button_close">
+                        <img src="./icons/X.svg" alt="close popup">
+                    </button>
                     <h4 class="popup_title">How to do a Website Audit to Improve SEO & Conversions</h4>
                     <span class="popup_info">You will get an SMS with a link to the webinar</span>
-                    <form id="login">
-                        <label for="input_name">Name</label>
-                        <input type="text" placeholder="Boris Johnson">
-                        <label for="label">Lable</label>
-                        <input type="tel">
+                    <form id="login" class="contact_form">
+                        <label for="input_name" class="form_label">Name</label>
+                        <input type="text"  class="form_input" placeholder="Boris Johnson">
+                        <label for="label" class="form_label">Lable</label>
+                        <input 
+                            type="tel" 
+                            id="demo" 
+                            placeholder="XX XXX XXX" 
+                            id="telephone"
+                            class="form_input" 
+                        >
+                        <!-- <input 
+                            type="tel" 
+                            class="form_input" 
+                            id="phone" 
+                            name="phone"
+                        > -->
                     </form>
+                    <div class="popup_buttons">
+                        <button type="menu" class="button button_form button_light">Support</button>
+                        <button type="submit" class="button button_form button_blue">Contact sales</button>
+                    </div>
+                    <div class="form_accept">
+                        <label class="form_checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p class="accept_text">
+                            By sending up? you agree to our <a class="highlighted" href="./plug.html">Conditions</a> and <a class="highlighted" href="./plug.html">Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        <img src="./icons/Frame 28.svg" alt="plerdy logo">
+                        <p class="copyright_text">
+                            Powered by Plerdy 
+                        </p>
+                    </div>
                 </div>
-                <button type="submit">
-                    <img src="./icons/X.svg" alt="close popup">
-                </button>
-            </div> -->
+            </div>
     
-            <section class="section_wrapper">
-                <h3 class="section_title"><strong>6 Reasons</strong> to Use Plerdy Data for a Website Usability Audit</h3>
-                <div class="slider_block">
-                    <div class="slider_card_wrapper">
-                        <div class="reason_intro">
-                            <h4 class="reason_title">You will benefit from our SaaS marketing product</h4>
-                            <p class="reason_text">Our team has developed a powerful tool to audit website content – a heatmap that features more than 100 reports for e-marketers and business owners.</p>
-                        </div>
-                        <div class="reason_number_bg"></div>
-                        <div class="reason_number_wrapper">
-                            <span class="reason_number">
-                                1
-                            </span>
-                        </div>
+            <section class="swiper_block">
+                <div class="swiper_header">
+                    <h3 class="swiper_title"><strong>6 Reasons</strong> to Use Plerdy Data for a Website Usability Audit</h3>
+                    <div class="button_wrapper">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-    
-                    <div class="slider_card_wrapper">
-                        <div class="reason_intro">
-                            <h4 class="reason_title">We have 10+ years of experience in digital marketing</h4>
-                            <p class="reason_text">The Plerdy team has rich experience in auditing, analyzing, and improving eCommerce websites to boost their conversion rates. So we are well aware of all the weak spots of eCommerce websites and know what data you need to run a usability audit of your website.</p>
+
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-el">
+                                <div class="reason_intro">
+                                    <h4 class="reason_title">You will benefit from our SaaS marketing product</h4>
+                                    <p class="reason_text">Our team has developed a powerful tool to audit website content – a heatmap that features more than 100 reports for e-marketers and business owners.</p>
+                                </div>
+                                <div class="reason_number_bg"></div>
+                                <div class="reason_number_wrapper">
+                                    <span class="reason_number">
+                                        1
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="reason_number_bg"></div>
-                        <div class="reason_number_wrapper">
-                            <span class="reason_number">
-                                2
-                            </span>
+        
+                        <div class="swiper-slide">
+                            <div class="swiper-el">
+                                <div class="reason_intro">
+                                    <h4 class="reason_title">We have 10+ years of experience in digital marketing</h4>
+                                    <p class="reason_text">The Plerdy team has rich experience in auditing, analyzing, and improving eCommerce websites to boost their conversion rates. So we are well aware of all the weak spots of eCommerce websites and know what data you need to run a usability audit of your website.</p>
+                                </div>
+                                <div class="reason_number_bg"></div>
+                                <div class="reason_number_wrapper">
+                                    <span class="reason_number">
+                                        2
+                                    </span>
+                                </div>
+                            </div>
                         </div>
+        
+                        <div class="swiper-slide">
+                            <div class="swiper-el">
+                                <div class="reason_intro">
+                                    <h4 class="reason_title">We enable generating hypotheses about what leads to low website conversions</h4>
+                                    <p class="reason_text">Thanks to the data gathered with the Plerdy heatmap about your website visitors’ behavior, you can generate hypotheses that potentially explain which functional flaws and problems are causing a low conversion on your website and how.</p>
+                                </div>
+                                <div class="reason_number_bg"></div>
+                                <div class="reason_number_wrapper">
+                                    <span class="reason_number">
+                                        3
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="swiper-el">
+                                <div class="reason_intro">
+                                    <h4 class="reason_title">The analysis of the dynamic elements of the website</h4>
+                                    <p class="reason_text">Some services disregard such an important aspect as the clickability analysis of the dynamic elements when UX auditing, including drop-down menu, pop-up, and slider. However, thanks to the unique Plerdy auditing functionality, you will receive this information.</p>
+                                </div>
+                                <div class="reason_number_bg"></div>
+                                <div class="reason_number_wrapper">
+                                    <span class="reason_number">
+                                        4
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="swiper-el">
+                                <div class="reason_intro">
+                                    <h4 class="reason_title">The analysis of both the desktop and mobile versions of the website</h4>
+                                    <p class="reason_text">In some areas, websites generate more than 60% of the traffic from their mobile versions, so it would be unwise not to audit the behavior of mobile users. With the Plerdy heatmap, you can run a UX auditing analysis separately for the desktop and mobile versions of your website.</p>
+                                </div>
+                                <div class="reason_number_bg"></div>
+                                <div class="reason_number_wrapper">
+                                    <span class="reason_number">
+                                        5
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="swiper-el">
+                                <div class="reason_intro">
+                                    <h4 class="reason_title">Audit data analysis with Google Analytics</h4>
+                                    <p class="reason_text">In addition to the Plerdy heatmap data, you also get the audit data from Google Analytics. Thus, you can analyze the sources of traffic and its quality to be able to pinpoint any problems. For example, fixing usability bugs alone will not improve conversion if the website gets mistargeted traffic.</p>
+                                </div>
+                                <div class="reason_number_bg"></div>
+                                <div class="reason_number_wrapper">
+                                    <span class="reason_number">
+                                        6
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-    
-                    <div class="slider_card_wrapper">
-                        <div class="reason_intro">
-                            <h4 class="reason_title">We enable generating hypotheses about what leads to low website conversions</h4>
-                            <p class="reason_text">Thanks to the data gathered with the Plerdy heatmap about your website visitors’ behavior, you can generate hypotheses that potentially explain which functional flaws and problems are causing a low conversion on your website and how.</p>
-                        </div>
-                        <div class="reason_number_bg"></div>
-                        <div class="reason_number_wrapper">
-                            <span class="reason_number">
-                                3
-                            </span>
-                        </div>
-                    </div>
-    
-                    <div class="slider_card_wrapper">
-                        <div class="reason_intro">
-                            <h4 class="reason_title">The analysis of the dynamic elements of the website</h4>
-                            <p class="reason_text">Some services disregard such an important aspect as the clickability analysis of the dynamic elements when UX auditing, including drop-down menu, pop-up, and slider. However, thanks to the unique Plerdy auditing functionality, you will receive this information.</p>
-                        </div>
-                        <div class="reason_number_bg"></div>
-                        <div class="reason_number_wrapper">
-                            <span class="reason_number">
-                                4
-                            </span>
-                        </div>
-                    </div>
-    
-                    <div class="slider_card_wrapper">
-                        <div class="reason_intro">
-                            <h4 class="reason_title">The analysis of both the desktop and mobile versions of the website</h4>
-                            <p class="reason_text">In some areas, websites generate more than 60% of the traffic from their mobile versions, so it would be unwise not to audit the behavior of mobile users. With the Plerdy heatmap, you can run a UX auditing analysis separately for the desktop and mobile versions of your website.</p>
-                        </div>
-                        <div class="reason_number_bg"></div>
-                        <div class="reason_number_wrapper">
-                            <span class="reason_number">
-                                5
-                            </span>
-                        </div>
-                    </div>
-    
-                    <div class="slider_card_wrapper">
-                        <div class="reason_intro">
-                            <h4 class="reason_title">Audit data analysis with Google Analytics</h4>
-                            <p class="reason_text">In addition to the Plerdy heatmap data, you also get the audit data from Google Analytics. Thus, you can analyze the sources of traffic and its quality to be able to pinpoint any problems. For example, fixing usability bugs alone will not improve conversion if the website gets mistargeted traffic.</p>
-                        </div>
-                        <div class="reason_number_bg"></div>
-                        <div class="reason_number_wrapper">
-                            <span class="reason_number">
-                                6
-                            </span>
-                        </div>
-                    </div>
-                    
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
@@ -198,7 +255,7 @@
     </main>
     <footer>
         <div class="footer_wrapper">
-            <button class="button_blue">Boost my website conversion</button>
+            <button class="button button_blue">Boost my website conversion</button>
             <p class="footer_motivation">So, it’s high time for you to stop losing 99% of potential clients due to being unaware of your website users’ behavior patterns and needs.</p>
         </div>
     </footer>
