@@ -7,7 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <title>Pricing</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script 
+        src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+   
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/css/intlTelInput.css"
+    >
+    <script 
+        src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/intlTelInput.min.js"
+    ></script>
+    <script src="./scripts/main.js" defer=""></script>
+    <title>Plerdy</title>
 </head>
 <body>
     <header class="header_wrapper">
@@ -92,84 +109,105 @@
 
     <div class="main_wrapper">
         <div class="pop-up_wrapper" id="popup">
-        <div class="popup_image">
-            <img src="./images/pexels-pixabay-264985 1.png" alt="webinar advertising">
-        </div>
-        <div class="popup_form">
-            <button 
-                type="reset" 
-                class="button_close" 
-                onclick="hide('popup')"
-            >
-                <img src="./icons/X.svg" alt="close popup">
-            </button>
-            <h4 class="popup_title">How to do a Website Audit to Improve SEO & Conversions</h4>
-            <span class="popup_info">You will get an SMS with a link to the webinar</span>
-            <form id="popupLogin" class="contact_form">
-                <div class="form_block">
-                    <label for="input_name" class="form_label">Name</label>
-                    <input 
-                        type="text"
-                        id="nameInput"  
-                        class="form_input" 
-                        placeholder="Boris Johnson"
-                        required
-                        >
-                </div>
-                <div class="form_block">
-                    <label for="phone" class="form_label">Lable</label>
-                    <div class="form_input">
-                        <input 
-                            type="text" 
-                            id="phoneInput"
-                            name="phoneNumber"
-                            placeholder="XX XXX XX"
-                            class="placeholder_class"
-                            min="0" 
-                            pattern="\d*" 
-                            inputmode="numeric"
-                            required
-                            >
-                </div>
-                </div>
-            </form>
-            <div class="popup_buttons">
+            <div class="popup_image">
+                <img src="./images/pexels-pixabay-264985 1.png" alt="webinar advertising">
+            </div>
+            
+            <div class="popup_form">
                 <button 
-                    type="submit" 
-                    class="button button_form button_light"
-                    id="submitButton"
-                    disabled
+                    type="reset" 
+                    class="button_close" 
                     onclick="hide('popup')"
                 >
-                    Support
+                    <img src="./icons/X.svg" alt="close popup">
                 </button>
-                <button type="submit" class="button button_form button_blue">Contact sales</button>
-            </div>
-            <div class="terms">
-                <label 
-                    class="terms_checkbox"
-                    for="termsCheckbox"
-                >
-                    <input 
-                        type="checkbox"
-                        id="termsCheckbox"
+                <h4 class="popup_title">How to do a Website Audit to Improve SEO & Conversions</h4>
+                <span class="popup_info">You will get an SMS with a link to the webinar</span>
+                <form id="popupLogin" class="contact_form">
+                    <div class="form_block">
+                        <label for="input_name" class="form_label">Name</label>
+                        <input 
+                            type="text"
+                            id="nameInput"  
+                            class="form_input" 
+                            placeholder="Boris Johnson"
+                            required
+                            >
+                    </div>
+                    <div class="form_block">
+                        <label for="phone" class="form_label">Lable</label>
+                        <div class="form_input">
+                            <input 
+                                type="text" 
+                                id="phoneInput"
+                                name="phoneNumber"
+                                placeholder="XX XXX XX"
+                                class="placeholder_class"
+                                min="0" 
+                                pattern="\d*" 
+                                inputmode="numeric"
+                                required
+                                >
+                    </div>
+                    </div>
+                </form>
+                <div class="popup_buttons">
+                    <button 
+                        type="submit" 
+                        class="button button_form button_light"
+                        id="submitButton"
+                        disabled
+                        onclick="hide('popup')"
                     >
-                    <span class="checkmark"></span>
-                </label>
-                <p class="terms_text">
-                    By sending up? you agree to our <a class="highlighted" href="./plug.html">Conditions</a> and <a class="highlighted" href="./plug.html">Privacy Policy</a>
-                </p>
-            </div>
-            <div class="copyright">
-                <img src="./icons/Frame 28.svg" alt="plerdy logo">
-                <p class="copyright_text">
-                    Powered by <u>Plerdy</u>
-                </p>
+                        Support
+                    </button>
+                    <button type="submit" class="button button_form button_blue">Contact sales</button>
+                </div>
+                <div class="terms">
+                    <label 
+                        class="terms_checkbox"
+                        for="termsCheckbox"
+                    >
+                        <input 
+                            type="checkbox"
+                            id="termsCheckbox"
+                        >
+                        <span class="checkmark"></span>
+                    </label>
+                    <p class="terms_text">
+                        By sending up? you agree to our <a class="highlighted" href="./plug.html">Conditions</a> and <a class="highlighted" href="./plug.html">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="copyright">
+                    <img src="./icons/Frame 28.svg" alt="plerdy logo">
+                    <p class="copyright_text">
+                        Powered by <u>Plerdy</u>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="hero_wrapper">
+        <div class="hero_wrapper">
             <h2 class="plug_text">Sorry, this page is under construction right now. <br/> We're working hard to get it to you as soon as possible!</h2>
+        </div>
+
+        <div class="signIn-form" id="signInForm">
+            <form class="register-form">
+              <input type="text" placeholder="name"/>
+              <input type="password" placeholder="password"/>
+              <input type="text" placeholder="email address"/>
+              <button onclick="hide('signInForm')">create</button>
+                <p class="message">Already registered? 
+                    <a href="plug.html">Sign In</a>
+                </p>
+            </form>
+            <form class="login-form">
+              <input type="text" placeholder="username"/>
+              <input type="password" placeholder="password"/>
+              <button onclick="hide('signInForm')">login</button>
+                <p class="message">Not registered? 
+                    <a href="plug.html">Create an account</a>
+                </p>
+            </form>
         </div>
     </div>
 
