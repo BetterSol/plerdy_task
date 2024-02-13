@@ -76,7 +76,7 @@
                     class="plerdy_logo"
                 >
             </a> 
-            <div class="menu" onclick="hide('menuAside')">
+            <div class="menu" onclick="hide('menuAside'), hide('signInForm')">
                 <img 
                     src="./icons/X.svg" 
                     alt="menu icon"
@@ -100,12 +100,9 @@
                     Book a Demo
                 </a>
             </li>
-            
-            
-            
         </ul>
         <div class="menu_contact_block">
-            <button class="button button_signIn">Sign In</button>
+            <button class="button button_signIn" onclick="show('signInForm')">Sign In</button>
             <button class="button button_blue" onclick="show('popup')">Contact sales</button>
         </div>
     </aside>

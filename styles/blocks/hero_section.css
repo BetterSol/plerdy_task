@@ -106,3 +106,102 @@
     top: 49px;
     left: 235px;
 }
+
+@media (max-width: 1350px) {
+    .hero_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: max-content;
+        min-width: 320px;
+        margin: 10px 10px 40px 10px;
+        padding: 20px 10px;
+    }
+
+    .hero_block{
+       margin: 0 auto; 
+       text-align: center;
+    }
+
+    .hero_intro {
+        margin: 0 0 20px 0;
+        text-align: left;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero_title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .hero_text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero_body, .hero_additional {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .button_blue {
+        font-size: 14px;
+    }
+
+    .clients_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .client_sotserve {
+        height: 17px;
+    }
+    .client_subaru {
+        height: 15px;
+    }
+    .client_anex_tour {
+        height: 14px;
+    }
+    .client_prom {
+        height: 18px;
+    }
+    .client_ukrposhta {
+        height: 24px;
+    }
+
+    .hero_illustration {
+        width: 229px;
+        height: 273px;
+        background-size: contain;
+    }
+
+    .illustration_chart_combined {
+        height: 118px;
+        top: -20px;
+        left: -35px;
+    }
+
+    .illustration_chart_green {
+        width: 152px;
+        top: 170px;
+        left: -57px
+    }
+
+    .illustration_chart_blue {
+        width: 121px;
+        top: 38px;
+        left: 140px;
+    }
+    
+    .section_title {
+        margin: 0 10px 15px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .button_close {
+        top: 3px;
+        right: -6px;
+    }
+}

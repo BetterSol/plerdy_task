@@ -6,7 +6,8 @@
     margin: 0 auto;
     justify-content: center;
     overflow: hidden;
-    left: 25%;
+    left: 1%;
+    right: 1%;
     top: 37px;
     border-radius: 15px;
     background-color: #FFFFFF;
@@ -168,4 +169,65 @@
 }
 .copyright_text, .copyright_text > u {
     color:#909090;
+}
+
+@media (max-width: 1350px) {
+    .pop-up_wrapper {
+        width: 300px;
+        height: 412.5px;
+        padding: 7.5px;
+    }
+    .popup_image {
+        display: none; 
+    }
+    .popup_form {
+        max-width: 237px;
+        margin: 0;
+        padding: 31px 24px 0;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+    .popup_title {
+        font-size: 18px;
+        line-height: 21.6px;
+        max-width: 237px;
+        letter-spacing: 1px;
+    }
+    .popup_info {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .form_block {
+        display: flex;
+        flex-direction: column;
+    }
+    .form_input {
+        width: auto;
+        padding: 6px 9px;
+        margin-bottom: 0;
+    }
+    .popup_buttons > .button {
+        font-size: 12px;
+        line-height: 13.5px;
+        padding: 9px 20px;
+    }
+    .copyright {
+        height: 14px;
+        bottom: 3px;
+        gap: 6px;
+        left: 30%;
+    }
+    .copyright_text {
+        font-size: 9px;
+        color: #BDBDBD;
+    }
+    .terms_text {
+        font-size: 9.75px;
+    }
 }

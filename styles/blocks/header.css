@@ -48,3 +48,25 @@
 .menu {
     display: none;
 }
+
+@media (max-width: 1350px) {
+    .header_wrapper {
+        height: 50px;
+    }
+
+    .header_block {
+        padding: 14px 10px;
+    }
+
+    .navigation_wrapper {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .header_icon, .plerdy_logo {
+        height: 21px;
+    }
+}

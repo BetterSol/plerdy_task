@@ -115,3 +115,32 @@
     line-height: 62px;
     color: #FFFFFF;
 }
+
+@media (max-width: 1350px) {
+    .swiper_block {
+        margin: 0 10px;
+    }
+    .swiper {
+        width: 100%;
+    }
+    .swiper-slide {
+        min-width: fit-content;
+    }
+    .swiper-el {
+        width: 295px;
+    }
+    .swiper_block > .swiper_header > .button_wrapper > .swiper-button-next,
+.swiper_block > .swiper_header > .button_wrapper > .swiper-button-prev {
+        display: none;
+    }
+    .swiper-pagination {
+        display: block;
+        justify-content: center;
+    }
+    .reason_title {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    
+}
