@@ -1,0 +1,171 @@
+.pop-up_wrapper {
+    display: none;
+    position: absolute;
+    height: 550px;
+    width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    overflow: hidden;
+    left: 25%;
+    top: 37px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 20px 0px rgba(93,120,255,0.05);
+    z-index: 90;
+}
+
+.pop-up_wrapper:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+  }
+  
+  .pop-up_wrapper:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    z-index: -1;
+  }
+
+.popup_form {
+    position: relative;
+    max-width: 400px;
+    padding: 17px 32px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.popup_title {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.popup_info {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+.form_label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color:#909090;
+    margin-bottom: 4px;
+}
+.iti--separate-dial-code { 
+    background-color: transparent;
+}
+.form_input {
+    height: 21px;
+    width: 316px;
+    padding: 8px 12px;
+    border: 1px solid #D5D5D6;
+    border-radius: 8px;
+    outline: #5D78FF;
+    margin-bottom: 8px;
+}
+.placeholder_class  {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.popup_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* terms block */
+.terms {
+    display: flex;
+    gap: 8px;
+}
+
+.terms_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 13px;
+}
+.terms_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.terms_checkbox input:checked ~ .checkmark {
+    background-color: #5D78FF;
+  }
+
+.checkmark {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    border: 1px solid #D5D5D6;
+    border-radius: 3px;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.terms_checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.terms_checkbox .checkmark:after {
+    left: 3px;
+    top: 2px;
+    width: 5px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.terms_text {
+    font-size: 13px;
+    line-height: 15px;
+    color:#909090;
+}
+.highlighted {
+    color: #5D78FF;
+    text-decoration: none;
+}
+
+.copyright {
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    gap: 9px;
+    bottom: 10px;
+    left: 25%;
+}
+.copyright_text, .copyright_text > u {
+    color:#909090;
+}

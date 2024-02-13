@@ -1,0 +1,39 @@
+/* buttons */
+.button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px;
+    padding: 6px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.button_signIn {
+    color: #5D78FF; 
+    background: none;
+}
+
+.button_blue {
+    color: #FFFFFF;
+    background-color: #5D78FF; 
+    max-width: 300px;
+}
+
+.button_light {
+    color: #FFFFFF;
+    background-color: #AED1FF;
+}
+
+.button_form {
+    font-size: 16px;
+}
+
+.button_close {
+    position: absolute;
+    background: none;
+    border: none;
+    top: 0;
+    right: 10px;
+}
